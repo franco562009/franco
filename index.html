@@ -11,6 +11,23 @@
       body {
         background: linear-gradient(135deg, #a0a0a0 0%, #000000 100%);
       }
+      .accordion-custom {
+        background: linear-gradient(135deg, #a0a0a0 0%, #000000 100%);
+        color: #000;
+        border: none;
+      }
+      .accordion-custom .accordion-button,
+      .accordion-custom .accordion-body {
+        background: transparent;
+        color: #000;
+      }
+      .accordion-custom .accordion-button:not(.collapsed) {
+        background: rgba(0,0,0,0.08);
+        color: #000;
+      }
+      .accordion-custom .accordion-item {
+        border: none;
+      }
     </style>
 </head>
 <body class="bg-light">
@@ -39,7 +56,7 @@
   <article><img class="foto1" src="img/LeoMessi20092010_pic_fcb-arsenal62.webp" alt="" width="400"></article>
   <article><img class="foto2" src="img/descarga (3).jfif" alt="" width="576"></article>
 </section>
-<div class="accordion" id="accordionExample">
+<div class="accordion accordion-custom" id="accordionExample">
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -63,7 +80,7 @@
         <strong>Cristiano Ronaldo dos Santos Aveiro es un futbolista profesional portugués que juega como delantero y capitán tanto del club Al-Nassr de la Saudi Pro League como de la selección nacional de Portugal.</strong>
       </div>
     </div>
-
+  </div>
 </div>
 <footer>
   <h1>
